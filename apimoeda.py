@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 import json
 
 app = Flask(__name__)
 
 @app.route("/")
 def home_page():
-    return "Hello World"
+    return render_template("index.html")
 
 #Build functions
 @app.route("/moedas")
@@ -29,5 +29,7 @@ def get_type_currency():
     data_conversation = json.load(f)
     f.close()
     return data_conversation
-    
-app.run()
+
+
+if __name__ == "__main__":
+    app.run(debug=True)

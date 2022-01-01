@@ -32,7 +32,7 @@ def get_type_currency():
 
 @app.route("/Clara")
 def amorzinho():
-    return "<h1> Te amo, Clara 💖 </h1>"
+    return render_template("clara.html")
 
 
 if __name__ == "__main__":

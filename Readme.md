@@ -10,6 +10,18 @@ Basicamente, ele mostra todas as moedas que a Awesome API tem e todas as suas co
 * Json
 * Flask
 
+## Scrapy das páginas
+* [Tipos das Moedas](https://economia.awesomeapi.com.br/xml/available/uniq)
+* [Tipos de Conversões](https://economia.awesomeapi.com.br/xml/available)
+
+ Foi realizado o Scraping de ambas as páginas para se obter as seguintes informações: 
+
+ * Código da Moeda
+ * Nome do País a que se refere
+ * Código da Conversão entre duas moedas distintas
+ * Nome por extenso dessa operação
+
+
 1. ### Como usar ❓
     * Fazendo uma requisição:
     ```

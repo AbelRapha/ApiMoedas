@@ -1,8 +1,8 @@
-# Api Moeda
+# 🪙  Api Moeda 🪙 
 
 Este projeto é uma extensão da API [Awesome API](https://docs.awesomeapi.com.br). 
 Basicamente, ele mostra todas as moedas que a Awesome API tem e todas as suas conversões possíveis de serem utilizadas, além de mostrar o país de cada moeda.
-## Tecnologias utilizadas
+## 🧑‍💻 Tecnologias utilizadas 🧑‍💻
 * Python 3.8
 * Selenium
 * BeautifulSoup
@@ -10,7 +10,7 @@ Basicamente, ele mostra todas as moedas que a Awesome API tem e todas as suas co
 * Json
 * Flask
 
-1. ### Como usar:
+1. ### Como usar ❓
     * Fazendo uma requisição:
     ```
     import requests as r
@@ -49,7 +49,7 @@ keys = [key.keys() for key in dict_moedas['Tipo da moeda']]
 df = pd.DataFrame(values, index=keys, columns=['Cód Moeda', "País"])
 print(df)
 ```
-5. ### Resultado
+5. ### Resultado 
 * Para o caso de Moedas
 
 |   |      Cód Moeda      |  País |

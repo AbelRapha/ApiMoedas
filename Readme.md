@@ -24,32 +24,32 @@ Basicamente, ele mostra todas as moedas que a Awesome API tem e todas as suas co
 
 1. ### Como usar ❓
     * Fazendo uma requisição:
-    ```
-    import requests as r
+```
+import requests as r
 
-    #Pegar os tipos de moedas
-    dados_moedas = r.get("http://apimoeda.herokuapp.com/moedas")
+#Pegar os tipos de moedas
+dados_moedas = r.get("http://apimoeda.herokuapp.com/moedas")
 
-    #Pegar os tipos de conversões
-    dados_conversões =  r.get("http://apimoeda.herokuapp.com/conversao")
-    ```
+#Pegar os tipos de conversões
+dados_conversões =  r.get("http://apimoeda.herokuapp.com/conversao")
+```
 2. ### Manipulando o arquivo em formato json
     * Fazendo a conversão:
-    ```
-    import json
-    dict_moedas = dados_moedas.json()
-    dict_conversoes = dados_conversões.json()
-    ```
+```
+import json
+dict_moedas = dados_moedas.json()
+dict_conversoes = dados_conversões.json()
+ ```
 3. ### Obtendo os valores e chaves:
-    ```
-    for i in dict_moedas['Tipo da moeda']:
+```
+for i in dict_moedas['Tipo da moeda']:
     for key, value in i.items():
         print(key,value)
 
-    for i in dict_conversoes['Tipo de conversao']:
+for i in dict_conversoes['Tipo de conversao']:
     for key, value in i.items():
         print(key,value)
-    ```
+```
 4. ### Criando uma tabela de forma estruturada
 ```
 import pandas as pd

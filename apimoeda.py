@@ -30,10 +30,5 @@ def get_type_currency():
     f.close()
     return data_conversation
 
-@app.route("/Clara")
-def amorzinho():
-    return render_template("clara.html")
-
-
 if __name__ == "__main__":
     app.run(debug=True)
